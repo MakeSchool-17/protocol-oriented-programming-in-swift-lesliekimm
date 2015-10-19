@@ -95,7 +95,11 @@ var containerShip = ContainerShip(kmPerHour: 30.0)
 var boat = Boat(kmPerHour: 30.0, numOfWindows: 8)
 var motorcycle = Motorcycle(kmPerHour: 130)
 
-let vehicles = [car, bus, boat, containerShip, motorcycle]
+print("The car has", car.numOfWindows, "windows and needs", car.duration(100.0), "hours to travel 100km.")
+print("The bus has", bus.numOfWindows, "windows and needs", bus.duration(100.0), "hours to travel 100km.")
+print("The container ship needs", containerShip.duration(100.0), "hours to travel 100km.")
+print("The boat has", boat.numOfWindows, "windows and needs", boat.duration(100.0), "hours to travel 100km.")
+print("The motorcycle has needs", motorcycle.duration(100.0), "hours to travel 100km.")
 
 
 
